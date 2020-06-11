@@ -1,13 +1,18 @@
 .page-wrapper {
-    position: fixed;
-    top: 17%;
-    left: 20%;
-    height: 510px;
+    position: absolute;
     display: flex;
     padding: 4em 3em;
     background-color: rgba($color: #FFF, $alpha: 0.6);
     border-radius: 1.5em;
-    width: 1000px;
+    width: 68em;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-wrapper {
+    height: 100%;
 }
 
 .main-header {
@@ -16,11 +21,12 @@
 
 .header-logo-text {
     font-size: 18px;
-    margin-right: .5em;
+    padding-right: .5em;
+    margin: auto;
 }
 
-.header-nav {
-    margin: auto 0;
+.nav-list {
+    margin: auto;
 }
 
 .list-item {
@@ -34,8 +40,8 @@
 }
 
 .landing-container {
-    padding-top: 55%;
-    width: 60%;
+    padding-top: 60%;
+    width: 50%;
 }
 
 .landing-title {
@@ -47,6 +53,7 @@
 .landing-text {
     font-size: 12px;
     font-weight: bold;
+    line-height: 1.4;
     color: rgba($color: #000000, $alpha: 0.3);
     margin-bottom: 4em;
 }
