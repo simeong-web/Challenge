@@ -4,15 +4,28 @@
     padding: 4em 3em;
     background-color: rgba($color: #FFF, $alpha: 0.6);
     border-radius: 1.5em;
-    width: 68em;
+    max-width: 68em;
+    width: 100%;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    max-height: 34em;
+    height: 100%;
+    box-shadow: 75px 114px 84px 55px rgba(0,0,0,0.15);
+
+    @media (max-width: $breakpoint-large) {
+        max-height: 54em;
+        max-width: 48em;
+    }
 }
 
 .header-wrapper {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 22em;
+    width: 100%;
 }
 
 .main-header {
@@ -40,8 +53,8 @@
 }
 
 .landing-container {
-    padding-top: 60%;
-    width: 50%;
+    max-width: 11em;
+    width: 100%;
 }
 
 .landing-title {
@@ -59,5 +72,10 @@
 }
 
 .shape-container {
-    width: 68%;
+    height: 34em;
+    height: 100%;
+    max-width: 50em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
